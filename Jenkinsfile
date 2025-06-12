@@ -1,7 +1,7 @@
 pipeline {
     agent any // Runs on any available agent; specify a label if necessary
     tools {
-        terraform 'terraform' // Ensure Terraform is configured under "Manage Jenkins > Global Tool Configuration"
+        terraform 'token-terraform' // Ensure Terraform is configured under "Manage Jenkins > Global Tool Configuration"
     }
     stages {
         stage('Checkout Code') {
